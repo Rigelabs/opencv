@@ -1,6 +1,6 @@
 import cv2
 
-capture = cv2.VideoCapture("files/times_square.mp4")
+capture = cv2.VideoCapture("files/times_square.mp4",cv2.CAP_DSHOW)
 if not capture.isOpened():
     raise IOError("Camera not opened")
    

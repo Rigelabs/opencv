@@ -42,7 +42,7 @@ if  not capture.isOpened:
         
     #load the custom model
 while True:
-    model = torch.hub.load('ultralytics/yolov5','custom',path="yolov5/runs/train/exp6/weights/last.pt",force_reload=True)
+    model = torch.hub.load('ultralytics/yolov5','custom',path="yolov5/runs/train/exp7/weights/last.pt",force_reload=True)
     success, frame = capture.read()
     if(success == False):
         print("Operation failed")
